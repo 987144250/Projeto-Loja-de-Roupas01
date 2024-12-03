@@ -1,0 +1,26 @@
+
+:root {
+
+    --cor-base: #f0ecec;
+    --cor-primaria-1:  #f6afb3;
+    --cor-secundaria-1: #8C97D1;
+    --cor-terciaria-1: #ABD3C4;
+}
+
+body {
+    background-color: var(--cor-base);
+}
+
+body, html { /* Ajusta posicionamento da pagina, fazendo com que "top_line" fique grudada no topo, etc */
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 1170px;
+    height: 1600px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: auto;
+    padding-top: 10px;
+}

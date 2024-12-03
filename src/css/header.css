@@ -1,0 +1,76 @@
+#top_line{
+
+    width: 100%;
+    height: 31px;
+    background-color: var(--cor-primaria-1);
+    
+}
+
+#top_line nav{
+    display: flex; /* deve ser flex junto com nav_list para ficarem separados */
+    justify-content: space-between;
+}
+
+#top_line img { /* INSTA ICON */
+
+    width: 31px;
+    height: auto;
+    display: flex;
+  
+}
+
+
+#list { /* Posição de img e num cell */
+    list-style: none;
+    gap: 40px;
+    margin-left: 70%;
+    margin-top: 0px;
+    display: flex; /* Deve ser flex junto com nav_bar para ficarem separados */
+}
+
+
+#logo {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 220px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    margin-top: 180px;
+    
+}
+
+header { /* Cabeçalho Faixada */
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    position: sticky; /* Fixa o elemento no topo da viewport quando chega lá, ao rolar o scroll continuará seguindo */
+    top: 0;
+
+}
+
+#nav_bar {    /* NAV */
+    width: 100%;
+    display: flex; /* deve ser flex junto com nav_list para ficarem separados */
+    justify-content: space-between;
+    
+}
+
+#nav_list{
+    list-style: none;
+    gap: 300px;
+    margin: auto;
+    display: flex; /* Deve ser flex junto com nav_bar para ficarem separados */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
