@@ -1,0 +1,29 @@
+#acessorios{   
+    width: 1170px;
+    height: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cor-secundaria-1);
+   
+}
+
+#macrame {
+    padding-top: 30px;
+    margin-left: 15%;
+    gap: 100px;
+    display: flex;
+    
+    
+}
+
+#macrame img{
+    
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+    
+    
+
+}
