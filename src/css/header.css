@@ -1,14 +1,20 @@
-#top_line{
+/* --------------------------------------TOP LINE--------------------------------------------------- */
+
+#top_line{ /* BARRA ROSA NO TOPO */
 
     width: 100%;
     height: 31px;
     background-color: var(--cor-primaria-1);
-    
+    z-index: 4;
+    margin: auto;
+   
 }
 
-#top_line nav{
-    display: flex; /* deve ser flex junto com nav_list para ficarem separados */
-    justify-content: space-between;
+
+#top_line nav li p {
+    
+    margin-top: 5px;
+   
 }
 
 #top_line img { /* INSTA ICON */
@@ -16,18 +22,34 @@
     width: 31px;
     height: auto;
     display: flex;
-  
+    
+    
 }
 
-
-#list { /* Posição de img e num cell */
+#top_list { /* Conteúdo dentro de barra rosa img e num cell */
     list-style: none;
-    gap: 40px;
-    margin-left: 70%;
-    display: flex; /* Deve ser flex junto com nav_bar para ficarem separados */
+    width: 100%;
+    margin-top: -1px;
+    display: flex; 
+    gap: 15px;
+    justify-content: center; /* IMPORTANTE: isso garante que textos não saiam do lugar quando diminuir o zoom!!! */
+    margin-left: 400px;
+    
+    
+        
 }
 
 
+/* -----------------------------------------HEADER FIXA ON SCROLL-------------------------------------- */
+
+
+marquee {
+    z-index: 4;
+    font: bolder 9pt verdana;
+    background-color: var(--cor-primaria-2);
+    color: white;
+    margin-top: -250px;
+} 
 
 
 header { /* Cabeçalho Faixada */
@@ -38,16 +60,11 @@ header { /* Cabeçalho Faixada */
     padding: 30px; /* Ajusta posição das palavras em header, centralizando tambem a barra header quando usar scroll */ 
     position: sticky; /* Fixa o elemento no topo da viewport quando chega lá, ao rolar o scroll continuará seguindo */
     top: 0;
+    z-index: 1000;
 
 }
 
-/* marquee {
-    z-index: 4;
-    font: bolder 9pt verdana;
-    background-color: black;
-    color: var(--cor-secundaria-1);
-    margin-top: -250px;
-} */
+
 
 marquee span {
     padding-left: 300px;
@@ -55,23 +72,22 @@ marquee span {
 
 #nav_bar {    /* NAV */
     width: 100%;
-    display: flex; /* deve ser flex junto com nav_list para ficarem separados */
+    display: flex; 
     justify-content: space-between;
     
 }
 
 #nav_list{
     list-style: none;
-    gap: 100px;
     margin: auto;
     gap: 120px;
     margin-top: -22px;
-    display: flex; /* Deve ser flex junto com nav_bar para ficarem separados */
+    display: flex; 
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: rgba(0, 0, 0, 0.925);
     font-weight: 600;
 }
 

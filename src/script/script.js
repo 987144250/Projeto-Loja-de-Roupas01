@@ -30,28 +30,74 @@ $(document).ready(function() { /* Quando o doc HTML estiver funcionando, essa fu
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
-    ScrollReveal().reveal('#cta', {
+    ScrollReveal().reveal('#lice_kid', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
     });
 
-    ScrollReveal().reveal('.dish', {
+    ScrollReveal().reveal('.modelo', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#testimonial_chef', {
-        origin: 'left',
-        duration: 1000,
-        distance: '20%'
+   
+
+
+     /*        // Selecionando elementos
+    const expand = document.getElementById('expand');
+    const modelo = document.getElementById('modelo');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Abrir img ao clicar na miniatura
+    modelo.addEventListener('click', () => {
+        expand.style.display = 'flex'; // Exibe a img
     });
 
-    ScrollReveal().reveal('.feedback', {
-        origin: 'right',
-        duration: 1000,
-        distance: '20%'
+    // Fechar img ao clicar no botão de fechar
+    closeBtn.addEventListener('click', () => {
+        expand.style.display = 'none'; // Oculta a img
     });
+
+    // Fechar img ao clicar fora da imagem
+    expand.addEventListener('click', (e) => {
+        if (e.target === expand) {
+            expand.style.display = 'none';
+        }) */
+
+     
+
+    
     
 });
+
+function expandir (img) {
+
+    
+ const expand = document.querySelector('.expand'); // Selecionando elementos
+ const closeBtn = document.querySelector('.close-btn');
+ const IMG_expandida = document.querySelector('#IMG_expandida')
+
+ IMG_expandida.src = img.src
+ 
+
+ // Abrir imagem ampliada ao clicar na miniatura
+    expand.style.display = 'flex';
+    
+
+  // Verifica se o botão de fechar existe
+    closeBtn.addEventListener('click', () => {
+        expand.style.display = 'none'; // Oculta a imagem ampliada
+    });
+ 
+
+
+    expand.addEventListener('click', (e) => {
+        if (e.target === expand) {
+            expand.style.display = 'none'; // Oculta a imagem se clicar fora
+        }
+    });
+ 
+
+}

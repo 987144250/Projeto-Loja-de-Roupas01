@@ -10,6 +10,8 @@
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
      <script src="https://unpkg.com/scrollreveal"></script> <!-- SCROLL REVEAL -->
 
      <link rel="stylesheet" href="src/css/style.css">
@@ -18,26 +20,28 @@
     <title>Cantinho Lice</title>
 </head>
 <body>
+     
     
-    <div id="top_line">
-        <nav>
-            <ul id="list">
-                <li style="list-style: none; text-decoration: none;">
-                    <a href="https://www.instagram.com/cantinholice/" target="_blank"><img src="src/img/favicon-16x16 insta.png" alt="isnta"></a>
-                </li>
-
-                <li style="list-style: none;">
-                    <p style="margin-top: 7px;">(82) 98102-0893</p>
-                </li>
-            </ul>
-        </nav>
-       
-
-    </div>
-
+        <div id="top_line">  <!-- BARRA SUPERIOR ROSA -->
+            <nav>
+                <ul id="top_list">
+                    <li>
+                        <a href="https://www.instagram.com/cantinholice/" target="_blank"><img src="src/img/favicon-16x16 insta.png" alt="insta"></a>
+                    </li>
+                    <li>
+                        <p>(82) 98102-0893</p>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+    
+        <marquee behavior="scroll" direction="right">
+            <span>Macrame</span>  <span>Crochê</span> <span>Pulseiras Personalizadas</span>
+        </marquee> 
    
       
-    <header>
+    <header> <!-- BARRA DE NAVEGAÇÃO FIXADA COM LOGO -->
                 
         <h1 id="title"> </h1>
         <nav id="nav_bar">
@@ -65,37 +69,65 @@
    
 
    
-   <!--  <marquee behavior="scroll" direction="right">
-        <span>Macrame</span>  <span>Crochê</span> <span>Pulseiras Personalizadas</span>
-    </marquee> -->
+ 
   
 
-    <main id="content"> <!-- Quadrado rosa em retrato(conteúdo da pagina ficará dentro dele) -->
+    <main id="content"> <!-- Quadrado branco em retrato(conteúdo da pagina ficará dentro dele) -->
 
        
         
+        <section id="inicio"></section>
+
+        <h2>Bem vindos!</h2>
+        <img src="src/img/lice_kid.png" alt="Lice IMG" id="lice_kid">
+        
+
         <section id="acessorios">
             
-            <h2>Acessórios em Macrame</h2>
+            <h2>Acessórios em Macrame</h2> <!-- título -->
 
-            <div id="macrame">
-                <img src="src/img/folhas_macrame.jpg"  alt="">
-                <img src="src/img/pingente_conha_collors.jpg" alt="">
-                <img src="src/img/rosa.jpg" alt="">
-            </div>
+           
+           <!-- Miniaturas das imagens -->
 
-            <div id="croche">
+           <div>
+
+            <!-- MACRAME -->
+
+            <img src="src/img/folhas-macrame.png" alt="Folhas" class="modelo" onclick="expandir(this)">
+            <img src="src/img/chocker02.png" alt="Chocker" class="modelo" onclick="expandir(this)">
+            <img src="src/img/pingente-concha-collors.png" alt="Conchas Collors" class="modelo" onclick="expandir(this)">
+            <img src="src/img/pingente-concha.png" alt="Conchas" class="modelo" onclick="expandir(this)">
+            <img src="src/img/rosa.png" alt="Rosa" class="modelo" onclick="expandir(this)">
+
+            <!-- CROCHE -->
+
+            <h2>Acessórios em Crochê</h2>
+
+
+            <!-- PERSONALIZADOS -->
+
+            <h2>Acessórios Personalizados</h2>
+
+
+
+           </div>
+        
+        
+            <div class="expand" id="expand">
+
+                <button class="close-btn" id="close-btn">&times;</button>
+                <img src="" alt="Imagem Ampliada" id="IMG_expandida">
                 
             </div>
+        
 
-            <div id="persona">
-                
-            </div>
+
+           
           
 
         </section>
 
-        
+        <section id="ava"></section>
 
         <footer>
         </footer>
