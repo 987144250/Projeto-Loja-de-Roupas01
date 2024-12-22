@@ -1,23 +1,56 @@
-#lice_kid {
-    width: 180px;
-    height: auto;
-    display: flex;
-    position: relative; /* Mantém espaço lateral livre, img nao fica colada em outros conteudos */
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#acessorios{   
-    width: 1170px;
-    height: 600px;
-}
 
 h2 {
     text-align: center;
     color: var(--cor-secundaria-1);
+    
    
 }
+
+/* -------------------- APRESENTAÇÃO / INICIO    --------------------------- */
+
+#inicio { /* CONTAINER */
+   
+    width: 800px;
+    height: 200px;  
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+#inicio p { /* texto de apresentação */
+    text-indent: 60px;
+    text-align: justify;
+    margin-left: 1%;
+    display: flex;
+    margin-top: -5px;
+    padding-left: 6%;
+    
+}
+
+#inicio h2 {
+    margin-top: -200px;
+    
+}
+
+
+#lice_kid { /* LICE KID IMG */
+    width: 130px;
+    height: 130px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-top: 80px;
+    
+}
+
+/* ---------------------------------- ACESSORIOS -------------------------------------- */
+
+#acessorios{   
+    width: 1170px;
+    height: 600px;
+
+}
+
+
 
 /* Imagem  */
 .modelo {
@@ -26,11 +59,11 @@ h2 {
     padding-top: 50px;
     margin-left: 6%;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease !important; /* Suaviza a transição e força usando "important" */
 }
 
 .modelo:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 
 /* Janela de IMG */

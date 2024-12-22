@@ -36,7 +36,7 @@ $(document).ready(function() { /* Quando o doc HTML estiver funcionando, essa fu
         distance: '20%'
     });
 
-    ScrollReveal().reveal('.modelo', {
+    ScrollReveal().reveal('.conjunto-img', {
         origin: 'left',
         duration: 2000,
         distance: '20%'
@@ -72,7 +72,7 @@ $(document).ready(function() { /* Quando o doc HTML estiver funcionando, essa fu
     
 });
 
-function expandir (img) {
+function expandir (img) { /* FUNÇÃO PARA EXPANDIR IMG AO CLICAR */
 
     
  const expand = document.querySelector('.expand'); // Selecionando elementos

@@ -8,8 +8,12 @@
     --cor-terciaria-1: #ABD3C4;
 }
 
-body {
+
+body { /* CONFIG PADRAO PARA EVITAR ERROS E MANTER PAGINA OK */
     background-color: var(--cor-base);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 body, html { /* Ajusta posicionamento da pagina, fazendo com que "top_line" fique grudada no topo, etc */

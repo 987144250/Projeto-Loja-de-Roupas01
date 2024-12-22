@@ -64,11 +64,10 @@ header { /* Cabeçalho Faixada */
 
 }
 
-
-
 marquee span {
     padding-left: 300px;
 }
+
 
 #nav_bar {    /* NAV */
     width: 100%;
