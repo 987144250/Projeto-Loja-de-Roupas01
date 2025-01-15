@@ -8,7 +8,7 @@ h2 {
 
 /* -------------------- APRESENTAÇÃO / INICIO    --------------------------- */
 
-#inicio { /* CONTAINER */
+#inicio { /* CONTAINER de texto*/
    
     width: 800px;
     height: 200px;  
@@ -98,4 +98,18 @@ h2 {
     cursor: pointer;
     background: none;
     border: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    #inicio { /* CONTAINER para o texto*/
+   
+        display: none; 
+    }
+
+
+    
 }
